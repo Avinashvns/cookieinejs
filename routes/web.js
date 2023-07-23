@@ -1,11 +1,10 @@
 import express from 'express'
 
 // import controllers which creates routes
-import studentController from '../controllers/studentController'
+import studentController from '../controllers/studentController.js'
 
 // router object
 const router = express.Router();
-
 
 // routes create for use contollers
 
