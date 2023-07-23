@@ -1,0 +1,5 @@
+npm init -y                                     package.json
+npm i express                                   express
+npm i -D nodemon                                run nodemon
+npm i ejs                                       embedded java script
+npm i cookie-parser                             cookie
