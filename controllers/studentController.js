@@ -7,7 +7,7 @@ class StudentController{
         res.cookie("shop", '5');
         // Persistent Cookie set
         res.cookie("country", "India", {maxAge:30000});  // 30 second
-        
+
         res.send("Cookie Set ....");
     }
 
@@ -25,6 +25,8 @@ class StudentController{
 
     // Delete Cookie
     static delete_cookie=(req,res)=>{
+        // Delete Cookie
+        res.clearCookie("username");
         res.send("Cookie Deleted ....");
     }
 
