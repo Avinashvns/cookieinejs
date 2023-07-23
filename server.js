@@ -1,11 +1,12 @@
 import express from 'express'
+import cookieParser from 'cookie-parser';
 
-
-const app=express();
+const server=express();
 const port= process.env.PORT || '4000'
 
+// Cookie Parser middleware
+server.use(cookieParser());
 
-
-app.listen(port,()=>{
+server.listen(port,()=>{
     console.log(`Server listening at http://localhost:${port}`)
 });
