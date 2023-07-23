@@ -2,6 +2,8 @@ class StudentController{
 
     // Set Cookie
     static set_cookie=(req,res)=>{
+        // Cookie set
+        res.cookie("username", "Avinash");
         res.send("Cookie Set ....");
     }
 
